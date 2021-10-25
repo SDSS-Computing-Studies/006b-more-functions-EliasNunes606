@@ -14,9 +14,14 @@ assert btcTocad(1) == 45000
 (2 points) 
 """
 
-def btcTocad():
-    pass
 
+
+def btcTocad(a):
+    a = float(a)
+    total = (a*45000.000)
+    x = round(total,1)
+    x = int(x)
+    return x
 
 """
 This checks to see if you are running the program as the main script or
@@ -26,3 +31,5 @@ are not executed.
 """
 if __name__ == "__main__":
     assert btcTocad(1) == 45000
+input1 = input("Enter an amount of bitcoin: ")
+print(btcTocad(input1))

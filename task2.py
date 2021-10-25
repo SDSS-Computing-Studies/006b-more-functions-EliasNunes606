@@ -8,10 +8,12 @@ return: float value of the largest number
 
 Sample assertions:
 assert largest([3,10,3]) == 10
+assert largest([3,10,3]) == 10
 """
 
-def largest():
-    pass
-    return
+def largest(a):
+    b=list(a)
+    b.sort(reverse=True)
+    return b[0]
 
 assert largest([3,10,3]) == 10

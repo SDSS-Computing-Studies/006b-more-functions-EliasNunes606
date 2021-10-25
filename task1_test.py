@@ -7,3 +7,5 @@ def test1():
 
 def test2():
     assert task1.btcTocad(0.5) == 22500
+test1()
+test2()
